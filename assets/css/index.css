@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@font-face {
+font-family: 'Banny Round';
+font-style: normal;
+font-weight: normal;
+src: local('Banny Round'), url('../fonts/Banny-Round.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Banny Light Round';
+font-style: normal;
+font-weight: normal;
+src: local('Banny Light Round'), url('../fonts/Banny-LightRound.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Banny Bold Round';
+font-style: normal;
+font-weight: normal;
+src: local('Banny Bold Round'), url('../fonts/Banny-BoldRound.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+.container {
+    width: 100%;
+}
+.container .first-block {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header-bg.png) center center fixed no-repeat;
+    background-size: cover;
+}
+.container main {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.container main header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container main header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.container main header .content {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex: 4;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container main header .img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.container main .upper-lines .line {
+    width: 42%;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: -75px;
+}
+.container main .upper-lines .line:first-child {
+    float: left;
+}
+.container main .upper-lines .line:last-child {
+    float: right;
+}
+.container main .screen {
+    width: 100%;
+    height: calc(100vh - 175px);
+    display: flex;
+    justify-content: center;
+}
+.container main .screen .lines {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.container main .screen .lines .line {
+    margin-top: -72px;
+    width: 1px;
+    height: calc(100vh - 105px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container main .screen .lines .middle-line {
+    margin-left: 25px;
+}
+.container main .screen .middle-line-start {
+    margin-top: 40px;
+    width: 1px;
+    height: calc(100vh - 400px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container main .screen .circle img:first-child {
+    margin-left: -30px;
+    display: block;
+}
+.container main .screen .circle .second {
+    position: absolute;
+    margin-left: -19px;
+    margin-top: calc(100vh - (100vh + 51px));
+}
+.container main .screen .circle .v {
+    position: absolute;
+    margin-top: calc(100vh - (100vh + 34px));
+    margin-left: -6px;
+}
+.container main .screen .middle-line-end {
+    width: 1px;
+    height: calc(100vh - (100vh - 119px));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container main .screen .screen-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container main .screen .screen-content .date {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.container main .screen .screen-content .date p {
+width: 280px;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 12px;
+text-align: center;
+transform: rotate(-90deg);
+margin-left: -130px;
+}
+.container main .screen .screen-content .middle-block {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container main .screen .screen-content .middle-block h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+.container main .screen .screen-content .middle-block h2 {
+    height: 100px;
+    font-family: "Banny Round";
+    font-size: 96px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container main .screen .screen-content .social {
+    flex: 1;
+}
