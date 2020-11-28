@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 @font-face {
-    font-family: 'Banny Round';
+    font-family: 'Banny';
     font-style: normal;
     font-weight: normal;
     src: local('Banny Round'), url('../fonts/Banny-Round.woff') format('woff');
@@ -38,6 +38,9 @@ a {
 }
 li {
     list-style: none;
+}
+input {
+    border: none;
 }
 .container {
     width: 100%;
@@ -86,10 +89,9 @@ li {
 }
 .container main .upper-lines .line {
     width: 42%;
-    height: 1px;
+    height: 0px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin-top: -75px;
-    opacity: 0.2;
 }
 .container main .upper-lines .line:first-child {
     float: left;
@@ -108,28 +110,26 @@ li {
     position: absolute;
     display: flex;
     justify-content: space-between;
+    margin-top: -1px;
 }
 .container main .screen .lines .line {
     margin-top: -72px;
-    width: 1px;
+    width: 0px;
     height: calc(100vh - 105px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    opacity: 0.2;
 }
 .container main .screen .lines .middle-line {
     margin-left: 30px;
 }
 .container main .screen .middle-line-start {
     margin-top: 40px;
-    width: 1px;
+    width: 0px;
     height: calc(100vh - 400px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    opacity: 0.2;
 }
 .container main .screen .circle .first {
     margin-left: -30px;
     display: block;
-    opacity: 0.2;
 }
 .container main .screen .circle .second {
     position: absolute;
@@ -142,10 +142,9 @@ li {
     margin-left: -6px;
 }
 .container main .screen .middle-line-end {
-    width: 1px;
+    width: 0px;
     height: calc(100vh - (100vh - 119px));
     border: 1px solid rgba(255, 255, 255, 0.2);
-    opacity: 0.2;
 }
 .container main .screen .screen-content {
     width: 100%;
@@ -188,7 +187,7 @@ li {
 }
 .container main .screen .screen-content .middle-block h2 {
     height: 100px;
-    font-family: "Banny Round";
+    font-family: "Banny";
     font-size: 96px;
     line-height: 0px;
     display: flex;
@@ -261,7 +260,7 @@ li {
     flex-direction: column;
 }
 .container .about .left-block h3 {
-    font-family: "Banny Round";
+    font-family: "Banny";
     font-size: 36px;
     line-height: 48px;
     text-align: center;
@@ -314,8 +313,8 @@ li {
 }
 .container .team {
     width: 100%;
-    height: 80vh;
-    background: url(../img/team-bg.png) center center fixed no-repeat;
+    height: 675px;
+    background: url(../img/team-bg.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -333,6 +332,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .container .team .bottom-block {
     width: 100%;
@@ -372,9 +372,10 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -100px;
 }
 .container .team .right-block h3 {
-    font-family: "Banny Round";
+    font-family: "Banny";
     font-size: 36px;
     line-height: 48px;
     text-align: center;
@@ -408,14 +409,227 @@ li {
 .container .team .lines {
     position: absolute;
     width: 60%;
-    height: 80vh;
+    height: 675px;
     margin-left: 20%;
     display: flex;
     justify-content: space-between;
-    opacity: 0.2;
 }
 .container .team .lines .line {
-    width: 1px;
+    width: 0px;
     height: 99.5%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container .booking {
+    width: 100%;
+    height: 675px;
+}
+.container .booking .content {
+    width: 100%;
+    height: 575px;
+    display: flex;
+}
+.container .booking .content .left-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.container .booking .content .left-block .main-block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .booking .content .left-block .main-block h3 {
+    font-family: "Banny";
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 5px;
+}
+.container .booking .content .left-block .main-block .line {
+    width: 60.91px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container .booking .content .left-block .main-block .input-block {
+    margin-bottom: 10px;
+}
+.container .booking .content .left-block .main-block .input-block input {
+    width: 257px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.container .booking .content .left-block .main-block .button {
+    width: 564px;
+    height: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #E8C300;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .booking .content .right-block {
+    flex: 1;
+}
+.container .booking .content .right-block img {
+    margin-top: 50px;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+.container .booking .content .right-block .img-block {
+    width: 226px;
+    height: 226px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    margin-top: -400px;
+    margin-left: 410px;
+}
+.container .booking .bottom {
+    height: 100px;
+    color: #333333;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+.container .booking .bottom span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.container .specialties {
+    background: url(../img/specialties-bg.png) no-repeat;
+    background-size: cover;
+    height: 675px;
+}
+.container .specialties h3 {
+    width: 100%;
+    height: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+.container .specialties .content {
+    height: 475px;
+    display: flex;
+    margin-left: -64px;
+}
+.container .specialties .content .left-block {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container .specialties .content .left-block .img-block {
+    width: 250px;
+    height: 262.72px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px #000000);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    margin-right: 400px;
+}
+.container .specialties .content .left-block img {
+    filter: drop-shadow(0px 0px 50px #000000);
+    border-radius: 5px;
+    z-index: 1;
+}
+.container .specialties .content .right-block {
+    flex: 1;
+}
+.container .specialties .content .right-block .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .specialties .content .right-block .content h3 {
+    height: 56px;
+    font-family: "Banny Bold Round";
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container .specialties .content .right-block .line {
+    width: 64.73px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.container .specialties .content .right-block .first {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container .specialties .content .right-block .second {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.container .specialties .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.container .specialties .dots img:nth-child(2) {
+    margin: 0 20px;
+}
+.container .specialties .lines {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.container .specialties .lines .line {
+    width: 0px;
+    height: 672px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
