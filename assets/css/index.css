@@ -108,13 +108,13 @@ li {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    opacity: 0.2;
 }
 .container main .screen .lines .line {
     margin-top: -72px;
     width: 1px;
     height: calc(100vh - 105px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.2;
 }
 .container main .screen .lines .middle-line {
     margin-left: 30px;
@@ -124,10 +124,12 @@ li {
     width: 1px;
     height: calc(100vh - 400px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.2;
 }
 .container main .screen .circle .first {
     margin-left: -30px;
     display: block;
+    opacity: 0.2;
 }
 .container main .screen .circle .second {
     position: absolute;
@@ -143,6 +145,7 @@ li {
     width: 1px;
     height: calc(100vh - (100vh - 119px));
     border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.2;
 }
 .container main .screen .screen-content {
     width: 100%;
